@@ -100,6 +100,8 @@ form input {
   font-size: 1.125em;
   line-height: 21px;
   padding-left: 30px;
+  max-width: 180px; 
+  width: 100%; 
 }
 form button {
   border: 0;
@@ -124,6 +126,7 @@ form > span {
   text-align: center;
   justify-content: center;
   color: black;
+  min-width: 50px;
 }
 
 ::placeholder {
@@ -510,22 +513,24 @@ footer li {
     justify-content: space-around;
     padding: 0;
     gap: 0;
+
   }
 
   nav li {
-    margin: 0;
-    display: flex;
-    padding: 10px;
     width: 100%;
-    border-bottom: solid 2px #f2f2f2;
-  }
+    height: unset;
+    border: unset;
+    border-bottom: 2px solid #f2f2f2;
+    padding: 10px ;
+    }
 
   nav li:hover {
     border-bottom: solid 2px #0065fc;
-    border-top: none;
-    color: #0065fc;
-    margin-top: 0;
-  }
+  margin-top: 0;
+    border-top: unset;
+    
+
+}
 
   nav a {
     width: 100%;
@@ -577,7 +582,7 @@ footer li {
   .filtres li {
     color: var(--black, #000);
     font-family: Raleway;
-    font-size: 0.875em;
+    font-size: 0.736em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
